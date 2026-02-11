@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>This is my Task List</h1>
+  </header>
+
+  <main class="container">
+    <form id="todo-form" class="todo-form">
+      <label for="todo-input">New Task</label>
+
+      <div class="input-group">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Enter a task..."
+          required
+          autofocus
+        />
+        <button type="submit" class="btn-add">Add</button>
+      </div>
+    </form>
+
+    <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
